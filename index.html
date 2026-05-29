@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-<title>INBOX ZERO — Hard Mode</title>
+<title>INBOX ZERO · Hard Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -170,15 +170,15 @@
   <section id="start">
     <div class="kicker">a 90-second game about your week</div>
     <h1 class="display">INBOX<br>ZERO<span class="z">.</span></h1>
-    <p class="lede">Work flies into your inbox faster than you can deal with it. Read each one. Make the right call before its patience runs out.</p>
+    <p class="lede">Work flies into your inbox faster than you can deal with it. Read each one. Make the right call before you get overwhelmed.</p>
     <div class="rules">
-      <div class="rule"><span class="ic">🆘</span><span>someone's <b>stuck</b> — help them, don't ignore</span></div>
-      <div class="rule"><span class="ic">⧉</span><span>two people, <b>same task</b> — merge it</span></div>
-      <div class="rule"><span class="ic">🤖</span><span>boring busywork — <b>hand it to AI</b></span></div>
-      <div class="rule"><span class="ic">☠️</span><span>AI wants to do something <b>dangerous</b> — block it</span></div>
+      <div class="rule"><span class="ic">🆘</span><span>someone's <b>stuck</b>: help them, don't ignore</span></div>
+      <div class="rule"><span class="ic">⧉</span><span>two people, <b>same task</b>: merge it</span></div>
+      <div class="rule"><span class="ic">🤖</span><span>boring busywork: <b>hand it to AI</b></span></div>
+      <div class="rule"><span class="ic">☠️</span><span>AI wants to do something <b>dangerous</b>: block it</span></div>
     </div>
     <button class="btn btn-primary" id="startBtn">Start the day →</button>
-    <p class="small">tip: clear fast, keep your queue short. you cannot win. that's the point.</p>
+    <p class="small">tip: clear fast. keep your queue short.</p>
   </section>
 
   <!-- HUD -->
@@ -209,7 +209,7 @@
   <section class="overlay" id="drown">
     <div class="kicker hot">stress maxed out</div>
     <h2 class="display">YOU<br>DROWNED.</h2>
-    <p class="sub">That's a week without a system. The work didn't stop. You just couldn't keep up — nobody could.</p>
+    <p class="sub">That's a week without a system. The work didn't stop. You just couldn't keep up. Nobody could.</p>
     <div class="stat-grid">
       <div class="stat"><div class="n" id="dHandled">0</div><div class="l">handled</div></div>
       <div class="stat"><div class="n hot" id="dDropped">0</div><div class="l">dropped</div></div>
@@ -219,7 +219,7 @@
       <button class="btn btn-calm" id="egilaBtn">See it with Egila →</button>
       <button class="btn btn-primary" id="tryAgainBtn">Try again ↺</button>
     </div>
-    <p class="small">beat your time — or watch the system do it for you.</p>
+    <p class="small">beat your time, or watch the system do it for you.</p>
   </section>
 
   <!-- RESULTS OVERLAY -->
@@ -266,7 +266,7 @@ const TYPES={
     msgs:["AI wants to run: <b class='who'>delete production database</b>","AI wants to: <b class='who'>force-push to main</b>","AI wants to: <b class='who'>wipe the prod namespace</b>"],
     right:"block",acts:["approve","block"]},
   noise:{cls:"t-noise",dot:"💤",label:"noise",
-    msgs:["<b class='who'>Daily standup</b> — nothing to discuss","<b class='who'>Status sync</b> meeting invite","Optional <b class='who'>alignment call</b>, 30 min"],
+    msgs:["<b class='who'>Daily standup</b>: nothing to discuss","<b class='who'>Status sync</b> meeting invite","Optional <b class='who'>alignment call</b>, 30 min"],
     right:"skip",acts:["attend","skip"]},
 };
 const TYPE_KEYS=Object.keys(TYPES);
